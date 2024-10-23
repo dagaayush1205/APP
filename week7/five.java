@@ -23,22 +23,16 @@ public class five {
         ProcessThread thread1 = new ProcessThread("Process1");
         ProcessThread thread2 = new ProcessThread("Process2");
         ProcessThread thread3 = new ProcessThread("Process3");
-        ProcessThread thread4 = new ProcessThread("Process4");
-        ProcessThread thread5 = new ProcessThread("Process5");
 
         // Set different priorities for the threads
         thread1.setPriority(Thread.MIN_PRIORITY);  // Priority 1
         thread2.setPriority(3);                    // Priority 3
         thread3.setPriority(Thread.NORM_PRIORITY); // Priority 5 (default)
-        thread4.setPriority(7);                    // Priority 7
-        thread5.setPriority(Thread.MAX_PRIORITY);  // Priority 10
 
         // Start the threads
         thread1.start();
         thread2.start();
         thread3.start();
-        thread4.start();
-        thread5.start();
     }
 }
-
+
